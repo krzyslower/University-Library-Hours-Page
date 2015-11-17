@@ -1,0 +1,176 @@
+/* 
+
+Grid styles : Based on Nicole Sullivan's OOCSS grids 
+http://gvsulib.com/ui/#lib-grid
+
+*/
+
+
+.line{overflow:hidden;*overflow:visible;*zoom:1;clear:both;}
+.span1{width:99%;}
+.span2,.span3,.span4,.span2of3,.span3of4{width:99%;}
+.unit{padding:.5em 0;}
+.left,
+.right{float:none;}
+/* Begin erase */
+.size1of1{float:none;width:99%;}
+.size1of2,.size1of4,.size3of4 {width:100%;}
+.size1of3,.size2of3{width:100%;}
+/* End erase */
+
+@media screen and (min-width: 450px) {
+.span4{width:49%;padding:.5em 1% .5em 0;}	
+.left{float:left;}
+.right{float:right;}
+}
+
+@media screen and (min-width:550px) {
+.span3{width:32%;padding:.5em 1% .5em 0;}
+.span2of3{width:65%;padding:.5em 1% .5em 0;}
+
+
+/* Begin erase */
+.size1of4,.size1of4{width:49%;}	
+.size1of3{width:32%;}
+.size2of3{width:65%;}
+/* End erase */
+}
+
+@media screen and (min-width:900px) {
+
+.span2{width:49%;padding:.5em 1% .5em 0;}
+.span4{width:24%;}
+.span3of4{width:74%;padding:.5em 1% .5em 0;}
+
+/* Begin erase */
+.size1of2{width:49%;}
+.size1of4{width:24%;}
+.size3of4{width:74%;}
+/* End erase */
+}
+
+
+
+
+
+
+.library_header > p {
+	padding: 1em 4em 1em 1em;
+	background-color: #88B3DA;
+	color: #363636;
+	font-size: 1.2em;
+	cursor: pointer;
+	position: relative;
+}
+
+.active > p, .library_header:hover > p {
+	background-color: #0065A4;
+	color: #fff;
+}
+
+.active > p {
+	cursor: text;
+}
+
+.library_name {
+	clear: right;
+	text-transform: uppercase;
+}
+
+.caps {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.more_hours {
+	margin-bottom: 20px;
+}
+
+h4.hours_type {
+	padding: 0 20px 10px 0;
+	display: block;
+	float: left;
+	margin: 0;
+}
+
+.semester_dates {
+	line-height: 2em;
+}
+
+dl {
+	padding-bottom: 20px;
+	clear: both;
+}
+
+dt {
+	float: left;
+	width: 50%;
+	clear: left;
+	padding: 2px 0;
+	color: #0065A4;
+}
+
+dd {
+	display: block;
+	margin-bottom: 5px;
+	padding: 1px 0;
+}
+
+
+
+#hidden_mq {
+	display: block;
+}
+
+@media screen and (max-device-width: 50em) {
+	#hidden_mq {display: none;}
+}
+
+
+
+
+/*
+
+MOBILE
+
+*/
+
+@media screen and (max-device-width: 550px) {
+
+
+}
+
+
+
+
+/*
+
+ARROW
+
+*/
+
+.arrow {
+	position: absolute;
+}
+
+.arrow_active {
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid black;
+	right: 3.5em;
+	margin-top: -3.5em;
+	z-index: 10;
+}
+
+.arrow_inactive {
+	width: 0; 
+	height: 0; 
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid white;
+	right: 3.5em;
+	margin-top: -3.5em;
+	z-index: 10;
+}
